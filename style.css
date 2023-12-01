@@ -1,3 +1,85 @@
+/*TROCAR TODA LETRA DO SITE*/
+*{
+    margin: 0;
+    padding: 0px;
+}
+a{
+    font-family: sans-serif;
+    text-decoration: none; /*Tirar sublinhado*/
+}
+.header{
+    background: #064162;
+    padding-inline: 16px;  /*Bom para usar pelo pc*/
+
+}
+.nav{
+    max-width: 1200px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex; 
+    justify-content: space-between; /*Espaço entre os itens*/
+}
+.logo{
+    font-size:48px;
+}
+.nav-list{
+    padding-top: 17px;
+    display:flex; /*itens um do lado do outro*/
+    gap: 32px; 
+    list-style: none; /*tirar as bolinhas*/
+}
+.nav-list a{
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px; /*aumenta area de clique para mobile*/
+}
+.hamburguer{
+    display:none; /*adesaparece em telas grandes*/
+    border:none;
+    background: none;
+    border-top:3px solid #fff; /*primeiro traço dos 3*/
+    cursor: pointer;
+}
+.hamburguer::before, 
+.hamburguer::after{
+    content:" ";
+    display:block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px){
+    .hamburguer{
+        display: block;  /*aparece em telas pequenas*/
+    }
+
+.nav-list{
+    position: fixed; /*menu fixado na tela*/
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #A24A18;
+    clip-path: circle(100px at 90% -15%); /*Criando circulo e mudando a posição*/
+    transition: 1s ease-out;
+
+    flex-direction: column;
+    justify-content: space-around; /*Distribui no espaço disponivel*/
+    align-items: center;
+    gap: 0; /*Area de respiro*/
+    pointer-events: none;
+}
+
+.nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all; /* Correção aqui: dois pontos, não ponto e vírgula */
+}
+
+}
+
+
 .BemVindo{
     padding: 30px;
     background-color: #F4F1E8;
