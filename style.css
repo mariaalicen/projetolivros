@@ -1,0 +1,313 @@
+.BemVindo{
+    padding: 30px;
+    background-color: #F4F1E8;
+    font-family: 'Radley', serif; 
+    margin: 0;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border: 0;
+}
+.BemVindo h2{
+    color:#064162;
+}
+.BemVindo h1{
+    color:#A24A18;
+    font-size: 50px;
+    text-align: center;
+}
+.BemVindo p{
+    max-width: 400px;
+    text-align:center;
+    font-size:14px;
+    font-family: 'Carlito', sans-serif;
+    margin-left: 400px;
+    color:#064162;
+}
+.BemVindo h5{
+    color:#A24A18;
+    text-decoration: underline;
+}
+/*Estilo livros lidos*/
+.livrosLidos{
+    background-color: #A24A18;
+    color:#F4F1E8;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
+.livrosLidos h3{
+    text-align: left;
+}
+.livrosLidos .imgLivro{
+    display:inline-block;
+    justify-content: center;
+}
+.livrosLidos .imgLivro img{
+    margin-top:40px;
+    max-width: 200px;
+    height: 200px;
+    margin-right: 15px;
+}
+.utilidades{
+    background-color: #F4F1E8;
+    color:#A24A18;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    width: auto;
+}
+.incone img{
+    width: 3.5em;
+}
+/*Estilo para a LvrosPlanejados*/
+.livrosPlanejados{
+    background-color: #A24A18;
+    color: #F4F1E8;
+    margin: 0;
+    padding: 30px;
+}
+
+.livrosPlanejados {
+    background-color: #A24A18;
+    color: #F4F1E8;
+    margin: 0;
+    padding: 30px;
+}
+.bloco-lista {
+    display: flex; 
+    justify-content: space-around; 
+    list-style-type: none; 
+    padding: 0;
+}
+.bloco {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.bloco img {
+    max-width: 250px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.bloco .sinopse {
+    flex: 1;
+    max-width: 260px; 
+    margin: 0 auto; 
+}
+
+
+/*Estilo citacao*/
+.citacao{
+    background-color: #F4F1E8;
+    padding: 40px;
+    color:#064162;
+    text-align: center;
+    width: auto;
+}
+.citacao h1{
+    font-size: 40px;
+    font-style: italic;
+
+}
+.citacao p{
+    color:#A24A18;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+}
+.citacao h5{
+    color: #064162;
+}
+/*Estilo credito*/
+.creditos{
+    background-color: #064162;
+    color:#F4F1E8;
+    padding: 30px;
+    margin: 0;
+    text-align:center;
+}
+.creditos .frase span{
+    border-bottom: 1px solid #F4F1E8;
+    padding-bottom:5px;
+}
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .navbar-custom {
+        padding: 20px;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+        margin-right: 30px;
+    }
+
+    .BemVindo {
+        padding: 20px;
+    }
+
+    .BemVindo h1 {
+        font-size: 40px;
+    }
+
+    .BemVindo p {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .livrosLidos .imgLivro img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .utilidades .incone img {
+        width: 3em;
+    }
+
+    .livrosPlanejados {
+        padding: 20px;
+    }
+
+    .bloco img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .bloco .sinopse {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .citacao {
+        padding: 20px;
+    }
+
+    .citacao h1 {
+        font-size: 30px;
+    }
+
+    .citacao p {
+        font-size: 16px;
+    }
+
+    .creditos {
+        padding: 20px;
+    }
+}
+
+
+
+/*Pagina Lidos*/
+.introducao{
+    background-image:url(imagens/livrosfundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    color: #fff;;
+    border-bottom: 15px;
+    width: auto;
+    margin: 0;
+}
+
+.FraseApresentacao{
+    background-color: #F4F1E8;
+    color: #A24A18;
+    padding: 30px;
+    border: 0;
+    text-align: left;
+    margin: 0;
+    width: auto;
+}
+.Jornada{
+    background-color: #A24A18;
+    color: #F4F1E8;
+    margin: 0;
+    padding: 30px;
+    width: auto;
+}
+.Jornadatexto img{
+    width: 450px;
+    text-align: left;
+}
+.Jornadatexto{
+    display: flex;
+    align-items: center;
+}
+.Jornada .Jornadatextolado{
+    flex: 1;
+    max-width: 550px;
+    padding-left: 80px;
+}
+
+.livroDestaque {
+    color: #064162;
+}
+
+
+.Processo {
+    background-color: #F4F1E8;
+    color: #A24A18;
+    text-align: center;
+    padding: 30px;
+}
+
+.ProcessoBloco {
+    margin-top: 20px;
+}
+
+.ProcessoBloco p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ProcessoBloco img {
+    width: 6.9em;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+
+    .introducao,
+    .FraseApresentacao,
+    .Jornada,
+    .Jornadatexto img,
+    .Jornadatexto,
+    .Jornada .Jornadatextolado,
+    .Processo,
+    .ProcessoBloco,
+    .ProcessoBloco p,
+    .ProcessoBloco img {
+        width: 100%; 
+        max-width: none; 
+        padding: 15px; 
+        text-align: center; 
+        margin: 0;
+    }
+
+
+    .Jornada .Jornadatextolado {
+        text-align: center; 
+        padding-left: 0; 
+        display: block; 
+    }
+    .ProcessoBloco img {
+        width: 50%; 
+    }
+}
+
+
+
+
+
+
+
